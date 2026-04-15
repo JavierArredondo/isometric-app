@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Aurora — Donde el día empieza</title>
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+    <div id="tooltip" class="tooltip"></div>
+    <div id="loading" class="loading">Cargando…</div>
+
+    <header class="nav">
+      <span class="logo">☕ Café Aurora</span>
+      <nav>
+        <a href="#brew">Café</a>
+        <a href="#pastries">Pastelería</a>
+        <a href="#cozy">Espacio</a>
+        <a href="#hours">Horario</a>
+      </nav>
+    </header>
+
+    <main id="story">
+      <section class="panel hero" data-step="0">
+        <div class="panel-inner">
+          <p class="eyebrow">Café · Pastelería · Espacio</p>
+          <h1>Donde el día<br/>empieza despacio.</h1>
+          <p class="lead">Un rincón de barrio para tu primera taza, tu mejor croissant y la tarde que no quería terminar.</p>
+          <a class="cta" href="#brew">Pasa a conocer ↓</a>
+        </div>
+      </section>
+
+      <section class="panel" id="brew" data-step="1">
+        <div class="panel-inner">
+          <p class="eyebrow">01 · El café</p>
+          <h2>Tostado en casa,<br/>servido a mano.</h2>
+          <p>Granos de origen único traídos cada mes. Espresso doble por defecto, métodos manuales bajo pedido. Sin prisa.</p>
+        </div>
+      </section>
+
+      <section class="panel" id="pastries" data-step="2">
+        <div class="panel-inner">
+          <p class="eyebrow">02 · Pastelería</p>
+          <h2>Hojaldre fresco<br/>desde las 6 am.</h2>
+          <p>Croissants, muffins, pastel del día. Receta corta, mantequilla buena, el horno encendido antes que tú.</p>
+        </div>
+      </section>
+
+      <section class="panel" id="cozy" data-step="3">
+        <div class="panel-inner">
+          <p class="eyebrow">03 · El espacio</p>
+          <h2>Una mesa<br/>siempre lista.</h2>
+          <p>Sin reservas, sin minimums, wifi rápido. Para trabajar, para una primera cita, o para no hacer absolutamente nada.</p>
+        </div>
+      </section>
+
+      <section class="panel" id="hours" data-step="4">
+        <div class="panel-inner">
+          <p class="eyebrow">04 · Horario</p>
+          <h2>De la salida del sol<br/>al final de la noche.</h2>
+          <p>Lunes a sábado, 6 am — 11 pm. Domingo, hasta las 4 pm. Si la luz está encendida, está abierto.</p>
+        </div>
+      </section>
+
+      <section class="panel cta-panel" data-step="5">
+        <div class="panel-inner">
+          <p class="eyebrow">Visítanos</p>
+          <h2>Calle Aurora 12<br/><span class="muted">Colonia Roma · CDMX</span></h2>
+          <a class="cta" href="#" onclick="return false">Cómo llegar →</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="scroll-hint" id="scroll-hint">
+      <span>Scroll</span>
+      <svg width="14" height="20" viewBox="0 0 14 20"><path d="M7 1v15M1 11l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
