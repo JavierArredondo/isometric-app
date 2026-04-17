@@ -92,6 +92,12 @@ body.night {
   transition: opacity 0.2s ease;
 }
 .nav nav a:hover { opacity: 1; }
+.nav nav a.repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav nav a.repo-link svg { display: block; }
 
 /* === STORY SECTIONS === */
 #story {
